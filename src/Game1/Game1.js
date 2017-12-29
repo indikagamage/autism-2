@@ -205,6 +205,7 @@ export default class Game1 extends React.Component {
 
     render() {
         const {navigate} = this.props.navigation;
+        const {goBack} = this.props.navigation;
         return (
             <Container style={styles.container}>
                 <Image style={styles.images} source={require('../img/bg_ip6.png')}></Image>
@@ -212,7 +213,7 @@ export default class Game1 extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.headerLeft}>
                             <TouchableOpacity
-                                // onPress={() => navigate.goBack()}
+                                 onPress={() =>goBack()}
                             >
                                 <Image style={styles.imagesLeft} source={require('../img/back.png')}></Image>
                             </TouchableOpacity>
