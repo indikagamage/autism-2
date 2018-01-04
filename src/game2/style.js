@@ -11,6 +11,9 @@ const styles = StyleSheet.create({
         left: 0,
         right: 0,
     },
-
+    images: {
+        flex: 1,
+        width: null,
+    },
 });
 export default styles;

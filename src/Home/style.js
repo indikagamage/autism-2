@@ -100,6 +100,22 @@ const styles = StyleSheet.create({
         position:'relative',
         right:'15%'
     },
+    mainIma2_2nd: {
+        width:65,
+        height:65,
+        resizeMode: 'contain',
+        position:'absolute',
+        left:'30%',
+        top:'0%',
+        // transform: [{ rotate: '325deg'}]
+    },
+    mainIma2nd: {
+        width:65,
+        height:65,
+        resizeMode: 'contain',
+        position:'relative',
+        right:'15%',top:'5%',
+    },
     aadimagesmages: {},
 });
 export default styles;

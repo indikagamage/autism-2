@@ -105,6 +105,5 @@ const styles = StyleSheet.create({
         position:'relative',
         right:'15%'
     },
-    aadimagesmages: {},
 });
 export default styles;

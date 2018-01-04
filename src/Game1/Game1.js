@@ -17,7 +17,6 @@ import {
 import {Image, View, TouchableOpacity, Animated} from 'react-native';
 import styles from './style';
 
-// var song = null;
 export default class Game1 extends React.Component {
     constructor(props) {
         super(props);
