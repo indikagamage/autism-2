@@ -21,94 +21,108 @@ import styles from './style';
 export default class Game1_2 extends React.Component {
     constructor(props) {
         super(props);
+        this.hideIma3 = this.hideIma3.bind(this);
         this.state ={
-            status1:false,
-            status2:false,
-            status3:false,
-            status4:false,
-            status5:false,
+            status1:1,
+            status2:1,
+            status3:1,
+            handleHand:1,
+
         }
     }
 
     static navigationOptions = {
         header: null
     };
+
     hideIma1(){
         this.setState({
-            status1:true
+            status1:2,
+            handleHand:2
         });
+
+    }
+    hand(){
+        if(this.state.handleHand == 1){
+            return{
+                width:60,
+                height:60,
+                resizeMode:'contain'
+            }
+        }else if(this.state.handleHand == 2){
+            return{
+                width:60,
+                height:60,
+                resizeMode:'contain',
+                transform: [{ rotate: '325deg'}]
+            }
+        } else{
+            return{
+                width:60,
+                height:60,
+                resizeMode:'contain',
+                transform: [{ rotate: '75deg'}]
+            }
+        }
     }
     getMyStyle1() {
-        if (this.state.status1) {
+        if (this.state.status1 == 2) {
             return {
                 display: 'none'
             }
         }else{
             return{
-                width:105,
+                width:75,
                 height:95,
                 resizeMode: 'contain',
             }
         }
     }
     hideIma2(){
-        this.setState({
-            status2:true
-        });
+        if(this.state.status1==1){
+            // Bam  vi tri 1
+        } else if(this.state.status1==2){
+            this.setState({
+                status2:2,
+                handleHand:3
+            });
+        }
+
+
     }
     getMyStyle2() {
-        if (this.state.status2) {
+        if (this.state.status2 ==2 && this.state.status1 ==2) {
             return {
                 display: 'none'
             }
         }else{
             return{
-                width:105,
+                width:75,
                 height:95,
                 resizeMode: 'contain',
             }
         }
     }
     hideIma3(){
-        this.setState({
-            status3:true
-        });
-    }
-    getMyStyle3() {
-        if (this.state.status3) {
-            return {
-                display: 'none'
-            }
-        }else{
-            return{
-                width:105,
-                height:95,
-                resizeMode: 'contain',
-            }
+        if(this.state.status2==1){
+            // Bam  vi tri 1
+        } else if(this.state.status2==2){
+            this.props.navigation.navigate("Home")
         }
     }
-    hideIma4(){
-        this.setState({
-            status4:true
-        });
-    }
-    getMyStyle4() {
-        if (this.state.status4) {
-            return {
-                display: 'none'
-            }
-        }else{
-            return{
-                width:105,
-                height:95,
-                resizeMode: 'contain',
-            }
+    getMyStyle3(){
+        return{
+            width:75,
+            height:95,
+            resizeMode: 'contain',
         }
     }
 
     render() {
         const {navigate} = this.props.navigation;
-        const {goBack} = this.props.navigation;
+         const {goBack} = this.props.navigation;
+             // .navigate("Home");
+
         return (
             <Container style={styles.container}>
                 <Image style={styles.images} source={require('../img/bg_ip6.png')}></Image>
@@ -125,35 +139,32 @@ export default class Game1_2 extends React.Component {
                     </View>
 
                     <View style={styles.main}>
-                        <TouchableOpacity onPress={() => this.hideIma1()} style={styles.mainItem}>
+                        <TouchableOpacity onPress={() => this.hideIma2()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle1()} source={require('../img/1/keo_do.png')}></Image>
+                                <Image style={this.getMyStyle2()} source={require('../img/1/Boling.png')}></Image>
                             </View>
                         </TouchableOpacity>
 
-                        <TouchableOpacity onPress={() => this.hideIma2()} style={styles.mainItem}>
+                        <TouchableOpacity onPress={() => this.hideIma1()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle2()} source={require('../img/1/keo_do.png')}></Image>
+                                <Image style={this.getMyStyle1()} source={require('../img/1/Boling.png')}></Image>
                             </View>
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => this.hideIma3()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle3()} source={require('../img/1/keo_do.png')}></Image>
+                                <Image style={this.getMyStyle3()}  source={require('../img/1/Boling.png')}></Image>
                             </View>
                         </TouchableOpacity>
-
-                        <TouchableOpacity onPress={() => this.hideIma4()} style={styles.mainItem}>
+                    </View>
+                    <View style={styles.main1}>
+                        <View style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle4()} source={require('../img/1/keo_do.png')}></Image>
+                                <Image style={this.hand()} source={require('../img/1/tay.png')}></Image>
                             </View>
-                        </TouchableOpacity>
+                        </View>
 
-                        <TouchableOpacity onPress={() => alert('abc')} style={styles.mainItem}>
-                            <View style={styles.mainImgView}>
-                                <Image style={styles.mainIma} source={require('../img/1/keo_do.png')}></Image>
-                            </View>
-                        </TouchableOpacity>
+
                     </View>
                 </View>
 
