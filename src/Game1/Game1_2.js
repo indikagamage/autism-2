@@ -107,7 +107,7 @@ export default class Game1_2 extends React.Component {
         if(this.state.status2==1){
             // Bam  vi tri 1
         } else if(this.state.status2==2){
-            this.props.navigation.navigate("Home")
+            this.props.navigation.navigate("Game1_4")
         }
     }
     getMyStyle3(){

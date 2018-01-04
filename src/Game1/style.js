@@ -42,18 +42,19 @@ const styles = StyleSheet.create({
         // marginTop:-200
     },
     main: {
-        // flex: 1,
+        flex: 1,
         flexDirection: "row",
         paddingLeft:30,
         paddingRight:30,
 
     },
     main1:{
-        // flex: 2,
+        flex: 2,
         flexDirection: "row",
         paddingLeft:30,
         paddingRight:30,
-        left:'53%'
+        marginTop:100
+
     },
     hand21:{
         width:50,
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
         position:'relative',
         borderRadius: 10,
         justifyContent: 'center',
-        alignSelf: 'stretch',
+        alignItems: 'center',
         // paddingBottom:20
     },
     mainText: {
