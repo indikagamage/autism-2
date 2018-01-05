@@ -18,16 +18,16 @@ import {Image, View, TouchableOpacity, Animated} from 'react-native';
 import styles from './style';
 
 // var song = null;
-export default class Game2_1 extends React.Component {
+export default class Game2_3 extends React.Component {
     constructor(props) {
         super(props);
+        this.goBack = this.goBack.bind(this);
         this.state = {
             status1: false,
             status2: false,
             status3: false,
             status4: false,
             status5: false,
-            status6: false,
 
         }
     }
@@ -40,8 +40,8 @@ export default class Game2_1 extends React.Component {
         this.setState({
             status1: true
         });
-        if( this.state.status2 == true && this.state.status6 == true && this.state.status4 == true && this.state.status5 == true){
-            this.props.navigation.navigate("Game2_2")
+        if( this.state.status2 == true && this.state.status3 == true && this.state.status4 == true && this.state.status5 == true){
+            this.props.navigation.navigate("Game2_4")
         }
     }
 
@@ -63,8 +63,8 @@ export default class Game2_1 extends React.Component {
         this.setState({
             status2: true
         });
-        if(this.state.status1 == true && this.state.status6 == true && this.state.status4 == true && this.state.status5 == true){
-            this.props.navigation.navigate("Game2_2")
+        if(this.state.status1 == true && this.state.status3 == true && this.state.status4 == true && this.state.status5 == true){
+            this.props.navigation.navigate("Game2_4")
         }
     }
 
@@ -83,10 +83,12 @@ export default class Game2_1 extends React.Component {
     }
 
     hideIma3() {
-        if(this.state.status3 == false){
-            alert('Wrong')
+        this.setState({
+            status3: true
+        });
+        if(this.state.status1 == true && this.state.status2 == true && this.state.status4 == true && this.state.status5 == true){
+            this.props.navigation.navigate("Game2_4")
         }
-
     }
 
     getMyStyle3() {
@@ -107,8 +109,8 @@ export default class Game2_1 extends React.Component {
         this.setState({
             status4: true
         });
-        if(this.state.status1 == true && this.state.status2 == true && this.state.status6 == true  && this.state.status5 == true){
-            this.props.navigation.navigate("Game2_2")
+        if(this.state.status1 == true && this.state.status2 == true && this.state.status3 == true  && this.state.status5 == true){
+            this.props.navigation.navigate("Game2_4")
         }
     }
 
@@ -130,8 +132,8 @@ export default class Game2_1 extends React.Component {
         this.setState({
             status5: true
         });
-        if(this.state.status1 == true && this.state.status2 == true && this.state.status6 == true && this.state.status4 == true ){
-            this.props.navigation.navigate("Game2_2")
+        if(this.state.status1 == true && this.state.status2 == true && this.state.status3 == true && this.state.status4 == true ){
+            this.props.navigation.navigate("Game2_4")
         }
     }
 
@@ -148,30 +150,10 @@ export default class Game2_1 extends React.Component {
             }
         }
     }
-    hideIma6() {
-        this.setState({
-            status6: true
-        });
-        if(this.state.status1 == true && this.state.status2 == true && this.state.status5 == true && this.state.status4 == true ){
-            this.props.navigation.navigate("Game2_2")
-        }
-    }
-
-    getMyStyle6() {
-        if (this.state.status6) {
-            return {
-                display: 'none'
-            }
-        } else {
-            return {
-                width: 75,
-                height: 95,
-                resizeMode: 'contain',
-            }
-        }
+    goBack(){
+        this.props.navigation.navigate("Home")
     }
     render() {
-        const {navigate} = this.props.navigation;
         return (
             <Container style={styles.container}>
                 <Image style={styles.images} source={require('../img/bg_ip6.png')}></Image>
@@ -179,7 +161,7 @@ export default class Game2_1 extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.headerLeft}>
                             <TouchableOpacity
-                                onPress={() => goBack()}
+                                onPress={() => this.goBack()}
                             >
                                 <Image style={styles.imagesLeft} source={require('../img/back.png')}></Image>
                             </TouchableOpacity>
@@ -191,14 +173,14 @@ export default class Game2_1 extends React.Component {
                             onPress={() => this.hideIma1()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle1()} source={require('../img/2/bongbay_do.png')}></Image>
+                                <Image style={this.getMyStyle1()} source={require('../img/2/bong_xanhlam.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma2()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle2()} source={require('../img/2/bongbay_do.png')}></Image>
+                                <Image style={this.getMyStyle2()} source={require('../img/2/bong_xanhlam.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -212,21 +194,14 @@ export default class Game2_1 extends React.Component {
                             onPress={() => this.hideIma4()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle4()} source={require('../img/2/bongbay_do.png')}></Image>
+                                <Image style={this.getMyStyle4()} source={require('../img/2/bong_xanhlam.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma5()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle5()} source={require('../img/2/bongbay_do.png')}></Image>
-                            </View>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                            onPress={() => this.hideIma6()}
-                            style={styles.mainItem}>
-                            <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle6()} source={require('../img/2/bongbay_do.png')}></Image>
+                                <Image style={this.getMyStyle5()} source={require('../img/2/bong_xanhlam.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>

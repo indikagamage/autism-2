@@ -21,6 +21,7 @@ import styles from './style';
 export default class Game2 extends React.Component {
     constructor(props) {
         super(props);
+        this.goBack = this.goBack.bind(this);
         this.state = {
             status1: false,
             status2: false,
@@ -40,7 +41,7 @@ export default class Game2 extends React.Component {
             status1: true
         });
         if( this.state.status2 == true && this.state.status3 == true && this.state.status4 == true && this.state.status5 == true){
-            alert('abc')
+            this.props.navigation.navigate("Game2_1")
         }
     }
 
@@ -63,7 +64,7 @@ export default class Game2 extends React.Component {
             status2: true
         });
         if(this.state.status1 == true && this.state.status3 == true && this.state.status4 == true && this.state.status5 == true){
-            alert('abc')
+            this.props.navigation.navigate("Game2_1")
         }
     }
 
@@ -86,7 +87,7 @@ export default class Game2 extends React.Component {
             status3: true
         });
         if(this.state.status1 == true && this.state.status2 == true && this.state.status4 == true && this.state.status5 == true){
-            alert('abc')
+            this.props.navigation.navigate("Game2_1")
         }
     }
 
@@ -109,7 +110,7 @@ export default class Game2 extends React.Component {
             status4: true
         });
         if(this.state.status1 == true && this.state.status2 == true && this.state.status3 == true  && this.state.status5 == true){
-            alert('abc')
+            this.props.navigation.navigate("Game2_1")
         }
     }
 
@@ -132,7 +133,7 @@ export default class Game2 extends React.Component {
             status5: true
         });
         if(this.state.status1 == true && this.state.status2 == true && this.state.status3 == true && this.state.status4 == true ){
-            alert('abc')
+            this.props.navigation.navigate("Game2_1")
         }
     }
 
@@ -149,11 +150,10 @@ export default class Game2 extends React.Component {
             }
         }
     }
-    componentDidMount(){
-
+    goBack(){
+        this.props.navigation.navigate("Home")
     }
     render() {
-        const {navigate} = this.props.navigation;
         return (
             <Container style={styles.container}>
                 <Image style={styles.images} source={require('../img/bg_ip6.png')}></Image>
@@ -161,7 +161,7 @@ export default class Game2 extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.headerLeft}>
                             <TouchableOpacity
-                                onPress={() => goBack()}
+                                onPress={() => this.goBack()}
                             >
                                 <Image style={styles.imagesLeft} source={require('../img/back.png')}></Image>
                             </TouchableOpacity>

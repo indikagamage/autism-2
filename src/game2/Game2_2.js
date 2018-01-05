@@ -28,6 +28,7 @@ export default class Game2_1 extends React.Component {
             status4: false,
             status5: false,
             status6: false,
+            status7: false,
 
         }
     }
@@ -40,8 +41,8 @@ export default class Game2_1 extends React.Component {
         this.setState({
             status1: true
         });
-        if( this.state.status2 == true && this.state.status6 == true && this.state.status4 == true && this.state.status5 == true){
-            this.props.navigation.navigate("Game2_2")
+        if( this.state.status2 == true && this.state.status6 == true && this.state.status4 == true && this.state.status7 == true){
+            this.props.navigation.navigate("Game2_3")
         }
     }
 
@@ -63,8 +64,8 @@ export default class Game2_1 extends React.Component {
         this.setState({
             status2: true
         });
-        if(this.state.status1 == true && this.state.status6 == true && this.state.status4 == true && this.state.status5 == true){
-            this.props.navigation.navigate("Game2_2")
+        if(this.state.status1 == true && this.state.status6 == true && this.state.status4 == true && this.state.status7 == true){
+            this.props.navigation.navigate("Game2_3")
         }
     }
 
@@ -107,8 +108,8 @@ export default class Game2_1 extends React.Component {
         this.setState({
             status4: true
         });
-        if(this.state.status1 == true && this.state.status2 == true && this.state.status6 == true  && this.state.status5 == true){
-            this.props.navigation.navigate("Game2_2")
+        if(this.state.status1 == true && this.state.status2 == true && this.state.status6 == true  && this.state.status7 == true){
+            this.props.navigation.navigate("Game2_3")
         }
     }
 
@@ -127,11 +128,8 @@ export default class Game2_1 extends React.Component {
     }
 
     hideIma5() {
-        this.setState({
-            status5: true
-        });
-        if(this.state.status1 == true && this.state.status2 == true && this.state.status6 == true && this.state.status4 == true ){
-            this.props.navigation.navigate("Game2_2")
+        if(this.state.status5 == false){
+            alert('Wrong')
         }
     }
 
@@ -152,13 +150,35 @@ export default class Game2_1 extends React.Component {
         this.setState({
             status6: true
         });
-        if(this.state.status1 == true && this.state.status2 == true && this.state.status5 == true && this.state.status4 == true ){
-            this.props.navigation.navigate("Game2_2")
+        if(this.state.status1 == true && this.state.status2 == true && this.state.status7 == true && this.state.status4 == true ){
+            this.props.navigation.navigate("Game2_3")
         }
     }
 
     getMyStyle6() {
         if (this.state.status6) {
+            return {
+                display: 'none'
+            }
+        } else {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+            }
+        }
+    }
+    hideIma7() {
+        this.setState({
+            status7: true
+        });
+        if(this.state.status1 == true && this.state.status2 == true && this.state.status6 == true && this.state.status4 == true ){
+            this.props.navigation.navigate("Game2_3")
+        }
+    }
+
+    getMyStyle7() {
+        if (this.state.status7) {
             return {
                 display: 'none'
             }
@@ -219,7 +239,7 @@ export default class Game2_1 extends React.Component {
                             onPress={() => this.hideIma5()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle5()} source={require('../img/2/bongbay_do.png')}></Image>
+                                <Image style={this.getMyStyle5()} source={require('../img/2/bong_vang.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -227,6 +247,13 @@ export default class Game2_1 extends React.Component {
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
                                 <Image style={this.getMyStyle6()} source={require('../img/2/bongbay_do.png')}></Image>
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => this.hideIma7()}
+                            style={styles.mainItem}>
+                            <View style={styles.mainImgView}>
+                                <Image style={this.getMyStyle7()} source={require('../img/2/bongbay_do.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>
