@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#E24816',
         color:'white',
         textAlign:'center',
+        fontSize:13
     },
     mainTextView: {
         bottom:0,
@@ -115,6 +116,22 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
         position:'relative',
         right:'15%',top:'5%',
+    },
+    mainIma4_2nd: {
+        width:45,
+        height:45,
+        resizeMode: 'contain',
+        position:'absolute',
+        left:'70%',
+        top:'0%',
+        // transform: [{ rotate: '325deg'}]
+    },
+    mainIma4nd: {
+        width:45,
+        height:45,
+        resizeMode: 'contain',
+        position:'relative',
+        right:'15%',top:'5%',left:'5%',
     },
     aadimagesmages: {},
 });

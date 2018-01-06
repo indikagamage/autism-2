@@ -84,10 +84,11 @@ export default class Home extends React.Component {
 
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("Game4")} style={styles.mainItem}>
                             <View style={styles.mainImgView} >
-                                <Image style={styles.mainIma} source={require('../img/Boling.png')}></Image>
+                                <Image style={styles.mainIma4nd} source={require('../img/4/banh_mau_do.png')}></Image>
+                                <Image style={styles.mainIma4_2nd} source={require('../img/4/banh_mau_do.png')}></Image>
                             </View>
                             <View style={styles.mainTextView}>
-                                <Text style={styles.mainNameGame}>Nhặt đồ</Text>
+                                <Text style={styles.mainNameGame}>Giống nhau</Text>
                             </View>
                         </TouchableOpacity>
 

@@ -13,7 +13,21 @@ export default class Game4 extends React.Component {
     static navigationOptions = {
         header: null
     };
-
+    hideIma1(){
+        alert('1')
+    }
+    hideIma2(){
+        alert('2')
+    }
+    hideIma3(){
+        alert('3')
+    }
+    hideIma4(){
+        alert('4')
+    }
+    hideIma5(){
+        alert('5')
+    }
     goBack() {
         this.props.navigation.navigate("Home")
     }
@@ -32,6 +46,53 @@ export default class Game4 extends React.Component {
                             </TouchableOpacity>
 
                         </View>
+                    </View>
+                    <View style={styles.main}>
+                        <TouchableOpacity
+                             onPress={() => this.hideIma1()}
+                            style={styles.mainItem}>
+                            <View style={styles.mainImgView}>
+                                <Image style={{width: 75,
+                height: 95,
+                resizeMode: 'contain',}} source={require('../img/4/banh_mau_do.png')}></Image>
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                             onPress={() => this.hideIma2()}
+                            style={styles.mainItem}>
+                            <View style={styles.mainImgView}>
+                                <Image style={{width: 75,
+                height: 95,
+                resizeMode: 'contain',}} source={require('../img/4/banh_xanhlam.png')}></Image>
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                             onPress={() => this.hideIma3()}
+                            style={styles.mainItem}>
+                            <View style={styles.mainImgView}>
+                                <Image style={{width: 75,
+                height: 95,
+                resizeMode: 'contain',}} source={require('../img/4/banh_tim.png')}></Image>
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                             onPress={() => this.hideIma4()}
+                            style={styles.mainItem}>
+                            <View style={styles.mainImgView}>
+                                <Image style={{width: 75,
+                height: 95,
+                resizeMode: 'contain',}} source={require('../img/4/banh_vang.png')}></Image>
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                             onPress={() => this.hideIma5()}
+                            style={styles.mainItem}>
+                            <View style={styles.mainImgView}>
+                                <Image style={{width: 75,
+                height: 95,
+                resizeMode: 'contain',}} source={require('../img/4/banh_mau_do.png')}></Image>
+                            </View>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </Container>

@@ -2,67 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="786ca8b3-fcd4-4091-8dff-da9dc0cb0f2a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/Chuong_cua.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_cam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_den.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_do.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_nau.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_tim.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_trang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_vang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_xanhla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/bi_xanhlam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/cho.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/chuong.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/chuong_ga_demo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/ga.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/gio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/hinhchunhat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/hinhtamgiac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/hinhtron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/hinhvuong.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_cam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_den.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_do.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_nau.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_tim.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_trang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_vang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_xanhla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lo_xanhlam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/lon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/meo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/3/vit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/banh_do.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/banh_tim.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/banh_vang.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/banh_xanhla.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/banh_xanhlam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/bo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/chim.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/cho.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/ga.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/hinhchunhat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/hinhelip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/hinhtamgiac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/hinhthoi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/hinhtron.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/hinhvuong.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/lon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/meo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/ngoisao.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/traitim.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/vit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game2/Game2_5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game2/Game2_6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game4/Game4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game4/style.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/4/banh_mau_do.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/4/banh_do.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Home/Home.js" afterPath="$PROJECT_DIR$/src/Home/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Home/index.js" afterPath="$PROJECT_DIR$/src/Home/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game2/Game2_1.js" afterPath="$PROJECT_DIR$/src/game2/Game2_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game2/Game2_2.js" afterPath="$PROJECT_DIR$/src/game2/Game2_2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game2/Game2_4.js" afterPath="$PROJECT_DIR$/src/game2/Game2_4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Home/style.js" afterPath="$PROJECT_DIR$/src/Home/style.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game4/Game4.js" afterPath="$PROJECT_DIR$/src/game4/Game4.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -91,8 +36,8 @@
       <file leaf-file-name="Game2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game2/Game2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="169" column="27" lean-forward="false" selection-start-line="160" selection-start-column="20" selection-end-line="169" selection-end-column="27" />
+            <state relative-caret-position="412">
+              <caret line="125" column="38" lean-forward="true" selection-start-line="123" selection-start-column="16" selection-end-line="125" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -101,9 +46,11 @@
       <file leaf-file-name="Game4.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game4/Game4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
-              <folding />
+            <state relative-caret-position="500">
+              <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,8 +68,18 @@
       <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="84" column="94" lean-forward="false" selection-start-line="84" selection-start-column="94" selection-end-line="84" selection-end-column="94" />
+            <state relative-caret-position="280">
+              <caret line="84" column="77" lean-forward="true" selection-start-line="84" selection-start-column="77" selection-end-line="84" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Home/style.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="124" column="16" lean-forward="false" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -131,7 +88,7 @@
       <file leaf-file-name="style.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game2/style.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="-842">
               <caret line="5" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="22" />
               <folding />
             </state>
@@ -158,30 +115,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game2_3.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game2/Game2_3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="203" column="108" lean-forward="false" selection-start-line="203" selection-start-column="108" selection-end-line="203" selection-end-column="108" />
-              <caret line="196" column="108" lean-forward="false" selection-start-line="196" selection-start-column="108" selection-end-line="196" selection-end-column="108" />
-              <caret line="189" column="108" lean-forward="false" selection-start-line="189" selection-start-column="108" selection-end-line="189" selection-end-column="108" />
-              <caret line="182" column="108" lean-forward="false" selection-start-line="182" selection-start-column="108" selection-end-line="182" selection-end-column="108" />
-              <caret line="175" column="108" lean-forward="false" selection-start-line="175" selection-start-column="108" selection-end-line="175" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game2_4.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game2/Game2_4.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="204" column="61" lean-forward="false" selection-start-line="204" selection-start-column="61" selection-end-line="204" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -197,6 +130,7 @@
       <find>mainItem</find>
       <find>images</find>
       <find>imagesLeft</find>
+      <find>mainNameGame</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/Game1/Game1_4.js" />
         <option value="$PROJECT_DIR$/src/Game1/Game1_2.js" />
         <option value="$PROJECT_DIR$/src/Game1/Game1.js" />
-        <option value="$PROJECT_DIR$/src/Home/style.js" />
         <option value="$PROJECT_DIR$/src/Game1/style.js" />
         <option value="$PROJECT_DIR$/src/game2/style.js" />
         <option value="$PROJECT_DIR$/src/game2/Game2.js" />
@@ -222,8 +155,9 @@
         <option value="$PROJECT_DIR$/src/game2/Game2_4.js" />
         <option value="$PROJECT_DIR$/src/game4/Game1.js" />
         <option value="$PROJECT_DIR$/src/Home/index.js" />
-        <option value="$PROJECT_DIR$/src/game4/Game4.js" />
         <option value="$PROJECT_DIR$/src/game4/style.js" />
+        <option value="$PROJECT_DIR$/src/Home/style.js" />
+        <option value="$PROJECT_DIR$/src/game4/Game4.js" />
         <option value="$PROJECT_DIR$/src/Home/Home.js" />
       </list>
     </option>
@@ -300,6 +234,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gameAu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameAu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gameAu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gameAu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="4" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -345,7 +292,7 @@
       <workItem from="1514536993202" duration="91000" />
       <workItem from="1514555134287" duration="2211000" />
       <workItem from="1515159629047" duration="6960000" />
-      <workItem from="1515259111096" duration="2480000" />
+      <workItem from="1515259111096" duration="4162000" />
     </task>
     <task id="LOCAL-00001" summary="Game2">
       <created>1515093986982</created>
@@ -361,19 +308,26 @@
       <option name="project" value="LOCAL" />
       <updated>1515177967601</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Game4">
+      <created>1515262886987</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515262886987</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25712000" />
+    <option name="totallyTimeSpent" value="27394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15812592" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -400,7 +354,8 @@
     <MESSAGE value="Game2" />
     <MESSAGE value="Game2_1" />
     <MESSAGE value="Game2_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game2_4" />
+    <MESSAGE value="Game4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -409,16 +364,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="836">
@@ -815,14 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Home/style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="116" column="26" lean-forward="false" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game1/Game1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2113">
@@ -931,14 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game2/Game2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="169" column="27" lean-forward="false" selection-start-line="160" selection-start-column="20" selection-end-line="169" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -949,17 +878,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game4/Game4.js">
+    <entry file="file://$PROJECT_DIR$/src/Home/style.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="2" column="66" lean-forward="false" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        <state relative-caret-position="273">
+          <caret line="124" column="16" lean-forward="false" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/4/banh_do.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game2/style.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="-842">
           <caret line="5" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="22" />
           <folding />
         </state>
@@ -973,10 +907,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/game2/Game2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="125" column="38" lean-forward="true" selection-start-line="123" selection-start-column="16" selection-end-line="125" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game4/Game4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="87" column="28" lean-forward="false" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="84" column="94" lean-forward="false" selection-start-line="84" selection-start-column="94" selection-end-line="84" selection-end-column="94" />
+        <state relative-caret-position="280">
+          <caret line="84" column="77" lean-forward="true" selection-start-line="84" selection-start-column="77" selection-end-line="84" selection-end-column="77" />
           <folding />
         </state>
       </provider>
