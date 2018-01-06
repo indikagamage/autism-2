@@ -42,7 +42,7 @@ export default class Game2_4 extends React.Component {
             status1: true
         });
         if( this.state.status2 == true && this.state.status6 == true && this.state.status4 == true && this.state.status7 == true){
-            this.props.navigation.navigate("Game2_3")
+            this.props.navigation.navigate("Game2_5")
         }
     }
 
@@ -65,7 +65,7 @@ export default class Game2_4 extends React.Component {
             status2: true
         });
         if(this.state.status1 == true && this.state.status6 == true && this.state.status4 == true && this.state.status7 == true){
-            this.props.navigation.navigate("Game2_3")
+            this.props.navigation.navigate("Game2_5")
         }
     }
 
@@ -109,7 +109,7 @@ export default class Game2_4 extends React.Component {
             status4: true
         });
         if(this.state.status1 == true && this.state.status2 == true && this.state.status6 == true  && this.state.status7 == true){
-            this.props.navigation.navigate("Game2_3")
+            this.props.navigation.navigate("Game2_5")
         }
     }
 
@@ -151,7 +151,7 @@ export default class Game2_4 extends React.Component {
             status6: true
         });
         if(this.state.status1 == true && this.state.status2 == true && this.state.status7 == true && this.state.status4 == true ){
-            this.props.navigation.navigate("Game2_3")
+            this.props.navigation.navigate("Game2_5")
         }
     }
 
@@ -173,7 +173,7 @@ export default class Game2_4 extends React.Component {
             status7: true
         });
         if(this.state.status1 == true && this.state.status2 == true && this.state.status6 == true && this.state.status4 == true ){
-            this.props.navigation.navigate("Game2_3")
+            this.props.navigation.navigate("Game2_5")
         }
     }
 
@@ -190,6 +190,9 @@ export default class Game2_4 extends React.Component {
             }
         }
     }
+    goBack(){
+        this.props.navigation.navigate("Home")
+    }
     render() {
         const {navigate} = this.props.navigation;
         return (
@@ -199,7 +202,7 @@ export default class Game2_4 extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.headerLeft}>
                             <TouchableOpacity
-                                onPress={() => goBack()}
+                                onPress={() => this.goBack()}
                             >
                                 <Image style={styles.imagesLeft} source={require('../img/back.png')}></Image>
                             </TouchableOpacity>

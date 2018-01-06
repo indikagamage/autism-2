@@ -82,7 +82,7 @@ export default class Home extends React.Component {
                             </View>
                         </TouchableOpacity>
 
-                        <TouchableOpacity onPress={() => alert('abc')} style={styles.mainItem}>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate("Game4")} style={styles.mainItem}>
                             <View style={styles.mainImgView} >
                                 <Image style={styles.mainIma} source={require('../img/Boling.png')}></Image>
                             </View>

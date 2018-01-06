@@ -21,6 +21,7 @@ import styles from './style';
 export default class Game2_1 extends React.Component {
     constructor(props) {
         super(props);
+        this.goBack = this.goBack.bind(this);
         this.state = {
             status1: false,
             status2: false,
@@ -170,6 +171,9 @@ export default class Game2_1 extends React.Component {
             }
         }
     }
+    goBack(){
+        this.props.navigation.navigate("Home")
+    }
     render() {
         const {navigate} = this.props.navigation;
         return (
@@ -179,7 +183,7 @@ export default class Game2_1 extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.headerLeft}>
                             <TouchableOpacity
-                                onPress={() => goBack()}
+                                onPress={() => this.goBack()}
                             >
                                 <Image style={styles.imagesLeft} source={require('../img/back.png')}></Image>
                             </TouchableOpacity>
