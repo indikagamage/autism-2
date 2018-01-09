@@ -7,26 +7,178 @@ export default class Game4 extends React.Component {
     constructor(props) {
         super(props);
         this.goBack = this.goBack.bind(this);
-        this.state = {}
+        this.state = {
+            status1 : 1,
+            status2 : 1,
+            status3 : 1,
+            status4 : 1,
+            status5 : 1,
+        }
     }
 
     static navigationOptions = {
         header: null
     };
     hideIma1(){
-        alert('1')
+      this.setState({
+          status1:2
+      });
+      if(this.state.status1 ==1 && this.state.status2 ==2 || this.state.status1 ==1 && this.state.status3 ==2 || this.state.status1 ==1 && this.state.status4 ==2){
+          this.setState({
+              status1 : 1,
+              status2 : 1,
+              status3 : 1,
+              status4 : 1,
+              status5 : 1,
+          });
+      }else if(this.state.status1 ==1 && this.state.status5 ==2){
+          alert('ok')
+      }
     }
+    getMyStyle1() {
+        if (this.state.status1==2) {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+                marginBottom:'30%'
+            }
+        } else {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+            }
+        }
+    }
+
     hideIma2(){
-        alert('2')
+        this.setState({
+            status2:2
+        });
+        if(this.state.status1 ==2 && this.state.status2 ==1 || this.state.status3 ==2 && this.state.status2 ==1 || this.state.status4 ==2 && this.state.status2 ==1 || this.state.status5==2 && this.state.status2 ==1){
+            this.setState({
+                status1 : 1,
+                status2 : 1,
+                status3 : 1,
+                status4 : 1,
+                status5 : 1,
+            });
+        }else if(this.state.status1 ==2 && this.state.status5 ==2){
+            alert('ok')
+        }
+    }
+    getMyStyle2() {
+        if (this.state.status2==2) {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+                marginBottom:'30%'
+            }
+        } else {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+            }
+        }
     }
     hideIma3(){
-        alert('3')
+        this.setState({
+            status3:2
+        });
+        if(this.state.status3 ==1 && this.state.status1 ==2 ||this.state.status3 ==1 && this.state.status2 ==2 || this.state.status3 ==1 && this.state.status5 ==2 || this.state.status3 ==1 && this.state.status4 ==2){
+            this.setState({
+                status1 : 1,
+                status2 : 1,
+                status3 : 1,
+                status4 : 1,
+                status5 : 1,
+            });
+        }else if(this.state.status1 ==2 && this.state.status5 ==2){
+            alert('ok')
+        }
+    }
+    getMyStyle3() {
+        if (this.state.status3==2) {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+                marginBottom:'30%'
+            }
+        } else {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+            }
+        }
     }
     hideIma4(){
-        alert('4')
+        this.setState({
+            status4:2
+        });
+        if(this.state.status4 ==1 && this.state.status1 ==2 ||this.state.status4 ==1 && this.state.status2 ==2 || this.state.status4 ==1 && this.state.status5 ==2 || this.state.status4 ==1 && this.state.status3 ==2){
+            this.setState({
+                status1 : 1,
+                status2 : 1,
+                status3 : 1,
+                status4 : 1,
+                status5 : 1,
+            });
+        }else if(this.state.status1 ==2 && this.state.status5 ==2){
+            alert('ok')
+        }
+    }
+    getMyStyle4() {
+        if (this.state.status4 ==2 ) {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+                marginBottom:'30%'
+            }
+        } else {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+            }
+        }
     }
     hideIma5(){
-        alert('5')
+        this.setState({
+            status5:2
+        });
+        if(this.state.status5 ==1 && this.state.status2 ==2 || this.state.status5 ==1 && this.state.status3 ==2 || this.state.status5 ==1 && this.state.status4 ==2){
+            this.setState({
+                status1 : 1,
+                status2 : 1,
+                status3 : 1,
+                status4 : 1,
+                status5 : 1,
+            });
+        }else if(this.state.status1 ==2 && this.state.status5 ==1){
+            alert('ok')
+        }
+    }
+    getMyStyle5() {
+        if (this.state.status5==2) {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+                marginBottom:'30%'
+            }
+        } else {
+            return {
+                width: 75,
+                height: 95,
+                resizeMode: 'contain',
+            }
+        }
     }
     goBack() {
         this.props.navigation.navigate("Home")
@@ -52,45 +204,35 @@ export default class Game4 extends React.Component {
                              onPress={() => this.hideIma1()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={{width: 75,
-                height: 95,
-                resizeMode: 'contain',}} source={require('../img/4/banh_mau_do.png')}></Image>
+                                <Image style={this.getMyStyle1()} source={require('../img/4/banh_mau_do.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                              onPress={() => this.hideIma2()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={{width: 75,
-                height: 95,
-                resizeMode: 'contain',}} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle2()} source={require('../img/4/banh_xanhlam.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                              onPress={() => this.hideIma3()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={{width: 75,
-                height: 95,
-                resizeMode: 'contain',}} source={require('../img/4/banh_tim.png')}></Image>
+                                <Image style={this.getMyStyle3()} source={require('../img/4/banh_tim.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                              onPress={() => this.hideIma4()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={{width: 75,
-                height: 95,
-                resizeMode: 'contain',}} source={require('../img/4/banh_vang.png')}></Image>
+                                <Image style={this.getMyStyle4()} source={require('../img/4/banh_vang.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                              onPress={() => this.hideIma5()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={{width: 75,
-                height: 95,
-                resizeMode: 'contain',}} source={require('../img/4/banh_mau_do.png')}></Image>
+                                <Image style={this.getMyStyle5()} source={require('../img/4/banh_mau_do.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>
