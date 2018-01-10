@@ -23,7 +23,11 @@ export default class Game4 extends React.Component {
       this.setState({
           status1:2
       });
-      if(this.state.status1 ==1 && this.state.status2 ==2 || this.state.status1 ==1 && this.state.status3 ==2 || this.state.status1 ==1 && this.state.status4 ==2){
+      if(
+          this.state.status1 ==1 && this.state.status2 ==2 ||
+          this.state.status1 ==1 && this.state.status3 ==2 ||
+          this.state.status1 ==1 && this.state.status4 ==2
+      ){
           this.setState({
               status1 : 1,
               status2 : 1,
@@ -32,21 +36,21 @@ export default class Game4 extends React.Component {
               status5 : 1,
           });
       }else if(this.state.status1 ==1 && this.state.status5 ==2){
-          alert('ok')
+          this.props.navigation.navigate("Game4_1")
       }
     }
     getMyStyle1() {
         if (this.state.status1==2) {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
                 marginBottom:'30%'
             }
         } else {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
             }
         }
@@ -56,7 +60,12 @@ export default class Game4 extends React.Component {
         this.setState({
             status2:2
         });
-        if(this.state.status1 ==2 && this.state.status2 ==1 || this.state.status3 ==2 && this.state.status2 ==1 || this.state.status4 ==2 && this.state.status2 ==1 || this.state.status5==2 && this.state.status2 ==1){
+        if(
+            this.state.status1 ==2 && this.state.status2 ==1 ||
+            this.state.status3 ==2 && this.state.status2 ==1 ||
+            this.state.status4 ==2 && this.state.status2 ==1 ||
+            this.state.status5==2 && this.state.status2 ==1
+        ){
             this.setState({
                 status1 : 1,
                 status2 : 1,
@@ -71,15 +80,15 @@ export default class Game4 extends React.Component {
     getMyStyle2() {
         if (this.state.status2==2) {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
                 marginBottom:'30%'
             }
         } else {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
             }
         }
@@ -88,7 +97,12 @@ export default class Game4 extends React.Component {
         this.setState({
             status3:2
         });
-        if(this.state.status3 ==1 && this.state.status1 ==2 ||this.state.status3 ==1 && this.state.status2 ==2 || this.state.status3 ==1 && this.state.status5 ==2 || this.state.status3 ==1 && this.state.status4 ==2){
+        if(
+            this.state.status3 ==1 && this.state.status1 ==2 ||
+            this.state.status3 ==1 && this.state.status2 ==2 ||
+            this.state.status3 ==1 && this.state.status5 ==2 ||
+            this.state.status3 ==1 && this.state.status4 ==2
+        ){
             this.setState({
                 status1 : 1,
                 status2 : 1,
@@ -103,15 +117,15 @@ export default class Game4 extends React.Component {
     getMyStyle3() {
         if (this.state.status3==2) {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
                 marginBottom:'30%'
             }
         } else {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
             }
         }
@@ -120,7 +134,12 @@ export default class Game4 extends React.Component {
         this.setState({
             status4:2
         });
-        if(this.state.status4 ==1 && this.state.status1 ==2 ||this.state.status4 ==1 && this.state.status2 ==2 || this.state.status4 ==1 && this.state.status5 ==2 || this.state.status4 ==1 && this.state.status3 ==2){
+        if(
+            this.state.status4 ==1 && this.state.status1 ==2 ||
+            this.state.status4 ==1 && this.state.status2 ==2 ||
+            this.state.status4 ==1 && this.state.status5 ==2 ||
+            this.state.status4 ==1 && this.state.status3 ==2
+        ){
             this.setState({
                 status1 : 1,
                 status2 : 1,
@@ -135,15 +154,15 @@ export default class Game4 extends React.Component {
     getMyStyle4() {
         if (this.state.status4 ==2 ) {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
                 marginBottom:'30%'
             }
         } else {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
             }
         }
@@ -152,7 +171,11 @@ export default class Game4 extends React.Component {
         this.setState({
             status5:2
         });
-        if(this.state.status5 ==1 && this.state.status2 ==2 || this.state.status5 ==1 && this.state.status3 ==2 || this.state.status5 ==1 && this.state.status4 ==2){
+        if(
+            this.state.status5 ==1 && this.state.status2 ==2 ||
+            this.state.status5 ==1 && this.state.status3 ==2 ||
+            this.state.status5 ==1 && this.state.status4 ==2
+        ){
             this.setState({
                 status1 : 1,
                 status2 : 1,
@@ -161,21 +184,21 @@ export default class Game4 extends React.Component {
                 status5 : 1,
             });
         }else if(this.state.status1 ==2 && this.state.status5 ==1){
-            alert('ok')
+            this.props.navigation.navigate("Game4_1")
         }
     }
     getMyStyle5() {
         if (this.state.status5==2) {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
                 marginBottom:'30%'
             }
         } else {
             return {
-                width: 75,
-                height: 95,
+                width: 55,
+                height: 75,
                 resizeMode: 'contain',
             }
         }

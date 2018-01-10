@@ -3,7 +3,7 @@ import {Image, TouchableOpacity, View} from "react-native";
 import {Button, Card, CardItem, Container, Content, Header, Icon, Left, Right, Title} from "native-base";
 import styles from './style';
 
-export default class Game4_1 extends React.Component {
+export default class Game4_5 extends React.Component {
     constructor(props) {
         super(props);
         this.goBack = this.goBack.bind(this);
@@ -14,6 +14,8 @@ export default class Game4_1 extends React.Component {
             status4: 1,
             status5: 1,
             status6: 1,
+            status7: 1,
+            status8: 1,
         }
     }
 
@@ -29,6 +31,7 @@ export default class Game4_1 extends React.Component {
             this.state.status1 == 1 && this.state.status2 == 2 ||
             this.state.status1 == 1 && this.state.status3 == 2 ||
             this.state.status1 == 1 && this.state.status4 == 2 ||
+            this.state.status1 == 1 && this.state.status7 == 2 ||
             this.state.status1 == 1 && this.state.status5 == 2 ||
             this.state.status1 == 1 && this.state.status6 == 2
         ) {
@@ -39,9 +42,11 @@ export default class Game4_1 extends React.Component {
                 status4: 1,
                 status5: 1,
                 status6: 1,
+                status7: 1,
+                status8: 1,
             });
-        } else if (this.state.status2 == 2 && this.state.status5 == 2) {
-            this.props.navigation.navigate("Game4_2")
+        } else if (this.state.status1 == 1 && this.state.status8 == 2) {
+            this.props.navigation.navigate("Home")
         }
     }
 
@@ -51,7 +56,7 @@ export default class Game4_1 extends React.Component {
                 width: 55,
                 height: 65,
                 resizeMode: 'contain',
-                marginBottom: '30%'
+                marginBottom: '70%'
             }
         } else {
             return {
@@ -70,6 +75,9 @@ export default class Game4_1 extends React.Component {
             this.state.status1 == 2 && this.state.status2 == 1 ||
             this.state.status3 == 2 && this.state.status2 == 1 ||
             this.state.status4 == 2 && this.state.status2 == 1 ||
+            this.state.status5 == 2 && this.state.status2 == 1 ||
+            this.state.status7 == 2 && this.state.status2 == 1 ||
+            this.state.status8 == 2 && this.state.status2 == 1 ||
             this.state.status6 == 2 && this.state.status2 == 1
         ) {
             this.setState({
@@ -79,9 +87,11 @@ export default class Game4_1 extends React.Component {
                 status4: 1,
                 status5: 1,
                 status6: 1,
+                status7: 1,
+                status8: 1,
             });
-        } else if (this.state.status2 == 1 && this.state.status5 == 2) {
-            this.props.navigation.navigate("Game4_2")
+        } else if (this.state.status2 == 2 && this.state.status5 == 2) {
+            // this.props.navigation.navigate("Game4_1")
         }
     }
 
@@ -91,7 +101,7 @@ export default class Game4_1 extends React.Component {
                 width: 55,
                 height: 65,
                 resizeMode: 'contain',
-                marginBottom: '30%'
+                marginBottom: '70%'
             }
         } else {
             return {
@@ -110,6 +120,8 @@ export default class Game4_1 extends React.Component {
             this.state.status3 == 1 && this.state.status1 == 2 ||
             this.state.status3 == 1 && this.state.status2 == 2 ||
             this.state.status3 == 1 && this.state.status5 == 2 ||
+            this.state.status3 == 1 && this.state.status7 == 2 ||
+            this.state.status3 == 1 && this.state.status8 == 2 ||
             this.state.status3 == 1 && this.state.status4 == 2 ||
             this.state.status3 == 1 && this.state.status6 == 2
         ) {
@@ -120,9 +132,11 @@ export default class Game4_1 extends React.Component {
                 status4: 1,
                 status5: 1,
                 status6: 1,
+                status7: 1,
+                status8: 1,
             });
         } else if (this.state.status2 == 2 && this.state.status5 == 2) {
-            this.props.navigation.navigate("Game4_2")
+            // this.props.navigation.navigate("Game4_1")
         }
     }
 
@@ -132,7 +146,7 @@ export default class Game4_1 extends React.Component {
                 width: 55,
                 height: 65,
                 resizeMode: 'contain',
-                marginBottom: '30%'
+                marginBottom: '70%'
             }
         } else {
             return {
@@ -150,8 +164,10 @@ export default class Game4_1 extends React.Component {
         if (
             this.state.status4 == 1 && this.state.status1 == 2 ||
             this.state.status4 == 1 && this.state.status2 == 2 ||
+            this.state.status4 == 1 && this.state.status8 == 2 ||
             this.state.status4 == 1 && this.state.status5 == 2 ||
             this.state.status4 == 1 && this.state.status6 == 2 ||
+            this.state.status4 == 1 && this.state.status7 == 2 ||
             this.state.status4 == 1 && this.state.status3 == 2
         ) {
             this.setState({
@@ -161,9 +177,11 @@ export default class Game4_1 extends React.Component {
                 status4: 1,
                 status5: 1,
                 status6: 1,
+                status7: 1,
+                status8: 1,
             });
         } else if (this.state.status2 == 2 && this.state.status5 == 2) {
-            this.props.navigation.navigate("Game4_2")
+            // this.props.navigation.navigate("Game4_1")
         }
     }
 
@@ -173,7 +191,7 @@ export default class Game4_1 extends React.Component {
                 width: 55,
                 height: 65,
                 resizeMode: 'contain',
-                marginBottom: '30%'
+                marginBottom: '70%'
             }
         } else {
             return {
@@ -189,8 +207,11 @@ export default class Game4_1 extends React.Component {
             status5: 2
         });
         if (
+            this.state.status5 == 1 && this.state.status2 == 2 ||
             this.state.status5 == 1 && this.state.status1 == 2 ||
             this.state.status5 == 1 && this.state.status3 == 2 ||
+            this.state.status5 == 1 && this.state.status8 == 2 ||
+            this.state.status5 == 1 && this.state.status7 == 2 ||
             this.state.status5 == 1 && this.state.status6 == 2 ||
             this.state.status5 == 1 && this.state.status4 == 2
         ) {
@@ -201,9 +222,11 @@ export default class Game4_1 extends React.Component {
                 status4: 1,
                 status5: 1,
                 status6: 1,
+                status7: 1,
+                status8: 1,
             });
-        } else if (this.state.status2 == 2 && this.state.status5 == 1) {
-            this.props.navigation.navigate("Game4_2")
+        } else if (this.state.status1 == 2 && this.state.status5 == 1) {
+            this.props.navigation.navigate("Game4_4")
         }
     }
 
@@ -213,7 +236,7 @@ export default class Game4_1 extends React.Component {
                 width: 55,
                 height: 65,
                 resizeMode: 'contain',
-                marginBottom: '30%'
+                marginBottom: '70%'
             }
         } else {
             return {
@@ -229,9 +252,11 @@ export default class Game4_1 extends React.Component {
             status6: 2
         });
         if (
+            this.state.status6 == 1 && this.state.status8 == 2 ||
             this.state.status6 == 1 && this.state.status2 == 2 ||
             this.state.status6 == 1 && this.state.status3 == 2 ||
             this.state.status6 == 1 && this.state.status4 == 2 ||
+            this.state.status6 == 1 && this.state.status7 == 2 ||
             this.state.status6 == 1 && this.state.status5 == 2 ||
             this.state.status6 == 1 && this.state.status1 == 2
         ) {
@@ -242,9 +267,11 @@ export default class Game4_1 extends React.Component {
                 status4: 1,
                 status5: 1,
                 status6: 1,
+                status7: 1,
+                status8: 1,
             });
-        } else if (this.state.status2 == 2 && this.state.status5 == 1) {
-            this.props.navigation.navigate("Game4_2")
+        } else if (this.state.status2 == 2 && this.state.status5 == 2) {
+            // this.props.navigation.navigate("Game4_1")
         }
     }
 
@@ -254,7 +281,96 @@ export default class Game4_1 extends React.Component {
                 width: 55,
                 height: 65,
                 resizeMode: 'contain',
-                marginBottom: '30%'
+                marginBottom: '70%'
+            }
+        } else {
+            return {
+                width: 55,
+                height: 65,
+                resizeMode: 'contain',
+            }
+        }
+    }
+
+    hideIma7() {
+        this.setState({
+            status7: 2
+        });
+        if (
+            this.state.status7 == 1 && this.state.status2 == 2 ||
+            this.state.status7 == 1 && this.state.status3 == 2 ||
+            this.state.status7 == 1 && this.state.status8 == 2 ||
+            this.state.status7 == 1 && this.state.status4 == 2 ||
+            this.state.status7 == 1 && this.state.status6 == 2 ||
+            this.state.status7 == 1 && this.state.status5 == 2 ||
+            this.state.status7 == 1 && this.state.status1 == 2
+        ) {
+            this.setState({
+                status1: 1,
+                status2: 1,
+                status3: 1,
+                status4: 1,
+                status5: 1,
+                status6: 1,
+                status7: 1,
+                status8: 1,
+            });
+        } else if (this.state.status1 == 2 && this.state.status5 == 2) {
+            // this.props.navigation.navigate("Game4_1")
+        }
+    }
+
+    getMyStyle7() {
+        if (this.state.status7 == 2) {
+            return {
+                width: 55,
+                height: 65,
+                resizeMode: 'contain',
+                marginBottom: '70%'
+            }
+        } else {
+            return {
+                width: 55,
+                height: 65,
+                resizeMode: 'contain',
+            }
+        }
+    }
+
+    hideIma8() {
+        this.setState({
+            status8: 2
+        });
+        if (
+            this.state.status8 == 1 && this.state.status7 == 2 ||
+            this.state.status8 == 1 && this.state.status2 == 2 ||
+            this.state.status8 == 1 && this.state.status3 == 2 ||
+            this.state.status8 == 1 && this.state.status4 == 2 ||
+            this.state.status8 == 1 && this.state.status6 == 2 ||
+            this.state.status8 == 1 && this.state.status5 == 2
+        ) {
+            this.setState({
+                status1: 1,
+                status2: 1,
+                status3: 1,
+                status4: 1,
+                status5: 1,
+                status6: 1,
+                status7: 1,
+                status8: 1,
+            });
+        } else if (this.state.status8 == 1 && this.state.status1 == 2) {
+            this.props.navigation.navigate("Home")
+        }
+    }
+
+    getMyStyle8() {
+        if (this.state.status8 == 2) {
+            return {
+                width: 55,
+                height: 65,
+                resizeMode: 'contain',
+                marginBottom: '70%'
             }
         } else {
             return {
@@ -289,42 +405,57 @@ export default class Game4_1 extends React.Component {
                             onPress={() => this.hideIma1()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle1()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle1()} source={require('../img/4/lon.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma2()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle2()} source={require('../img/4/banh_xanhla.png')}></Image>
+                                <Image style={this.getMyStyle2()} source={require('../img/4/ga.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma3()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle3()} source={require('../img/4/banh_tim.png')}></Image>
+                                <Image style={this.getMyStyle3()} source={require('../img/4/meo.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma4()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle4()} source={require('../img/4/banh_vang.png')}></Image>
+                                <Image style={this.getMyStyle4()} source={require('../img/4/cho.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma5()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle5()} source={require('../img/4/banh_xanhla.png')}></Image>
+                                <Image style={this.getMyStyle5()} source={require('../img/4/vit.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma6()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle6()} source={require('../img/4/banh_mau_do.png')}></Image>
+                                <Image style={this.getMyStyle6()} source={require('../img/4/bo.png')}></Image>
+                            </View>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => this.hideIma7()}
+                            style={styles.mainItem}>
+                            <View style={styles.mainImgView}>
+                                <Image style={this.getMyStyle7()} source={require('../img/4/chim.png')}></Image>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity
+                            onPress={() => this.hideIma8()}
+                            style={styles.mainItem}>
+                            <View style={styles.mainImgView}>
+                                <Image style={this.getMyStyle8()} source={require('../img/4/lon.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>
