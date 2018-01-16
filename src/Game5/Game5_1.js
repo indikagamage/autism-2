@@ -3,7 +3,7 @@ import {Image, TouchableOpacity, View} from "react-native";
 import {Button, Card, CardItem, Container, Content, Header, Icon, Left, Right, Title} from "native-base";
 import styles from './style';
 
-export default class Game5 extends React.Component {
+export default class Game5_1 extends React.Component {
     constructor(props) {
         super(props);
         this.goBack = this.goBack.bind(this);
@@ -22,12 +22,19 @@ export default class Game5 extends React.Component {
     };
     hideIma1(){
         this.setState({
-            status1:1
+            status1:2
         });
-
+        this.props.navigation.navigate("Game5_2")
     }
     getMyStyle1() {
-        if (this.state.status1==1) {
+        if (this.state.status1 ==2 ) {
+            return {
+                width: 55,
+                height: 75,
+                resizeMode: 'contain',
+                marginBottom:'30%'
+            }
+        } else {
             return {
                 width: 55,
                 height: 75,
@@ -68,20 +75,12 @@ export default class Game5 extends React.Component {
     }
     hideIma4(){
         this.setState({
-            status4:2
+            status4:1
         });
-        this.props.navigation.navigate("Game5_1")
 
     }
     getMyStyle4() {
-        if (this.state.status4 ==2 ) {
-            return {
-                width: 55,
-                height: 75,
-                resizeMode: 'contain',
-                marginBottom:'30%'
-            }
-        } else {
+        if (this.state.status4 ==1 ) {
             return {
                 width: 55,
                 height: 75,
@@ -143,21 +142,21 @@ export default class Game5 extends React.Component {
                             onPress={() => this.hideIma1()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle1()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle1()} source={require('../img/4/banh_vang.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma2()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle2()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle2()} source={require('../img/4/banh_mau_do.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma3()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle3()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle3()} source={require('../img/4/banh_mau_do.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -171,14 +170,14 @@ export default class Game5 extends React.Component {
                             onPress={() => this.hideIma5()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle5()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle5()} source={require('../img/4/banh_mau_do.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma6()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle6()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle6()} source={require('../img/4/banh_mau_do.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>

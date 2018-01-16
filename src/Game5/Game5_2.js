@@ -3,7 +3,7 @@ import {Image, TouchableOpacity, View} from "react-native";
 import {Button, Card, CardItem, Container, Content, Header, Icon, Left, Right, Title} from "native-base";
 import styles from './style';
 
-export default class Game5 extends React.Component {
+export default class Game5_2 extends React.Component {
     constructor(props) {
         super(props);
         this.goBack = this.goBack.bind(this);
@@ -20,14 +20,21 @@ export default class Game5 extends React.Component {
     static navigationOptions = {
         header: null
     };
-    hideIma1(){
+    hideIma3(){
         this.setState({
-            status1:1
+            status3:2
         });
-
+        this.props.navigation.navigate("Game5_3")
     }
-    getMyStyle1() {
-        if (this.state.status1==1) {
+    getMyStyle3() {
+        if (this.state.status3 ==2 ) {
+            return {
+                width: 55,
+                height: 75,
+                resizeMode: 'contain',
+                marginBottom:'30%'
+            }
+        } else {
             return {
                 width: 55,
                 height: 75,
@@ -51,14 +58,14 @@ export default class Game5 extends React.Component {
             }
         }
     }
-    hideIma3() {
+    hideIma1() {
         this.setState({
-            status3: 1
+            status1: 1
         });
 
     }
-    getMyStyle3() {
-        if (this.state.status3==1) {
+    getMyStyle1() {
+        if (this.state.status1==1) {
             return {
                 width: 55,
                 height: 75,
@@ -68,20 +75,12 @@ export default class Game5 extends React.Component {
     }
     hideIma4(){
         this.setState({
-            status4:2
+            status4:1
         });
-        this.props.navigation.navigate("Game5_1")
 
     }
     getMyStyle4() {
-        if (this.state.status4 ==2 ) {
-            return {
-                width: 55,
-                height: 75,
-                resizeMode: 'contain',
-                marginBottom:'30%'
-            }
-        } else {
+        if (this.state.status4 ==1 ) {
             return {
                 width: 55,
                 height: 75,
@@ -143,42 +142,42 @@ export default class Game5 extends React.Component {
                             onPress={() => this.hideIma1()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle1()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle1()} source={require('../img/4/hinhtron.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma2()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle2()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle2()} source={require('../img/4/hinhtron.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma3()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle3()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle3()} source={require('../img/4/hinhtamgiac.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma4()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle4()} source={require('../img/4/banh_mau_do.png')}></Image>
+                                <Image style={this.getMyStyle4()} source={require('../img/4/hinhtron.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma5()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle5()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle5()} source={require('../img/4/hinhtron.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
                             onPress={() => this.hideIma6()}
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle6()} source={require('../img/4/banh_xanhlam.png')}></Image>
+                                <Image style={this.getMyStyle6()} source={require('../img/4/hinhtron.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>

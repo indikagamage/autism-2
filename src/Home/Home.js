@@ -98,7 +98,7 @@ export default class Home extends React.Component {
                                 <Image style={styles.mainIma4_2nd} source={require('../img/5/lon_1.png')}></Image>
                             </View>
                             <View style={styles.mainTextView}>
-                                <Text style={styles.mainNameGame}>Nhặt đồ</Text>
+                                <Text style={styles.mainNameGame}>Khác loại</Text>
                             </View>
                         </TouchableOpacity>
                     </View>
