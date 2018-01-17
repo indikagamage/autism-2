@@ -30,7 +30,6 @@ export default class Game6_1 extends React.Component {
             status7:false,
             status8:false,
             status9:false,
-            hiddenImage: new Animated.Value(0)
         }
     }
 
@@ -281,7 +280,7 @@ export default class Game6_1 extends React.Component {
 
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("Game6_2")} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={styles.mainIma} source={require('../img/6/khanmat.png')}></Image>
+                                <Image style={this.getMyStyle9()} source={require('../img/6/khanmat.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>

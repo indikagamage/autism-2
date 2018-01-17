@@ -30,7 +30,7 @@ export default class Game6 extends React.Component {
             status7:false,
             status8:false,
             status9:false,
-            hiddenImage: new Animated.Value(0)
+            status10:false,
         }
     }
 
@@ -201,6 +201,25 @@ export default class Game6 extends React.Component {
             }
         }
     }
+    hideIma10(){
+        this.setState({
+            status10:true
+        });
+        this.props.navigation.navigate("Game6_1")
+    }
+    getMyStyle10() {
+        if (this.state.status10) {
+            return {
+                display: 'none'
+            }
+        }else{
+            return{
+                width:55,
+                height:65,
+                resizeMode: 'contain',
+            }
+        }
+    }
 
     render() {
         const {navigate} = this.props.navigation;
@@ -276,9 +295,9 @@ export default class Game6 extends React.Component {
                             </View>
                         </TouchableOpacity>
 
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate("Game6_1")} style={styles.mainItem}>
+                        <TouchableOpacity onPress={() => this.hideIma10()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={styles.mainIma} source={require('../img/6/khanmat.png')}></Image>
+                                <Image style={this.getMyStyle10()} source={require('../img/6/khanmat.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>

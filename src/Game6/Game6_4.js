@@ -17,7 +17,7 @@ import {
 import {Image, View, TouchableOpacity, Animated} from 'react-native';
 import styles from './style';
 
-export default class Game6_3 extends React.Component {
+export default class Game6_4 extends React.Component {
     constructor(props) {
         super(props);
         this.state ={
@@ -59,8 +59,9 @@ export default class Game6_3 extends React.Component {
     }
     hideIma2(){
         this.setState({
-            status2:true
+            status2:false
         });
+        alert('wrong')
     }
     getMyStyle2() {
         if (this.state.status2) {
@@ -95,8 +96,9 @@ export default class Game6_3 extends React.Component {
     }
     hideIma4(){
         this.setState({
-            status4:true
+            status4:false
         });
+        alert('wrong')
     }
     getMyStyle4() {
         if (this.state.status4) {
@@ -131,8 +133,9 @@ export default class Game6_3 extends React.Component {
     }
     hideIma6(){
         this.setState({
-            status6:true
+            status6:false
         });
+        alert('wrong')
     }
     getMyStyle6() {
         if (this.state.status6) {
@@ -149,8 +152,9 @@ export default class Game6_3 extends React.Component {
     }
     hideIma7(){
         this.setState({
-            status7:true
+            status7:false
         });
+        alert('wrong')
     }
     getMyStyle7() {
         if (this.state.status7) {
@@ -185,8 +189,9 @@ export default class Game6_3 extends React.Component {
     }
     hideIma9(){
         this.setState({
-            status9:true
+            status9:false
         });
+        alert('wrong')
     }
     getMyStyle9() {
         if (this.state.status9) {
@@ -205,7 +210,7 @@ export default class Game6_3 extends React.Component {
         this.setState({
             status10:true
         });
-        this.props.navigation.navigate("Game6_4")
+        this.props.navigation.navigate("Home")
     }
     getMyStyle10() {
         if (this.state.status10) {
@@ -248,38 +253,38 @@ export default class Game6_3 extends React.Component {
 
                         <TouchableOpacity onPress={() => this.hideIma2()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle2()} source={require('../img/6/cam.png')}></Image>
+                                <Image style={this.getMyStyle2()} source={require('../img/6/oto.png')}></Image>
                             </View>
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => this.hideIma3()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle3()} source={require('../img/6/na.png')}></Image>
+                                <Image style={this.getMyStyle3()} source={require('../img/6/duahau.png')}></Image>
                             </View>
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => this.hideIma4()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle4()} source={require('../img/6/chuoi.png')}></Image>
+                                <Image style={this.getMyStyle4()} source={require('../img/6/ghe.png')}></Image>
                             </View>
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => this.hideIma5()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle5()} source={require('../img/6/duahau.png')}></Image>
+                                <Image style={this.getMyStyle5()} source={require('../img/6/na.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>
                     <View style={styles.main}>
                         <TouchableOpacity onPress={() => this.hideIma6()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle6()} source={require('../img/6/vai.png')}></Image>
+                                <Image style={this.getMyStyle6()} source={require('../img/6/bo.png')}></Image>
                             </View>
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => this.hideIma7()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle7()} source={require('../img/6/nho.png')}></Image>
+                                <Image style={this.getMyStyle7()} source={require('../img/6/tivi.png')}></Image>
                             </View>
                         </TouchableOpacity>
 
@@ -291,13 +296,13 @@ export default class Game6_3 extends React.Component {
 
                         <TouchableOpacity onPress={() => this.hideIma9()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle9()} source={require('../img/6/chomchom.png')}></Image>
+                                <Image style={this.getMyStyle9()} source={require('../img/6/vit.png')}></Image>
                             </View>
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => this.hideIma10()} style={styles.mainItem}>
                             <View style={styles.mainImgView}>
-                                <Image style={this.getMyStyle10()} source={require('../img/6/mit.png')}></Image>
+                                <Image style={this.getMyStyle10()} source={require('../img/6/chomchom.png')}></Image>
                             </View>
                         </TouchableOpacity>
                     </View>
