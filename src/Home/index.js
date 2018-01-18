@@ -28,6 +28,15 @@ import Game6_1 from "../Game6/Game6_1";
 import Game6_2 from "../Game6/Game6_2";
 import Game6_3 from "../Game6/Game6_3";
 import Game6_4 from "../Game6/Game6_4";
+import Game7 from "../Game7/Game7";
+import Game7_1 from "../Game7/Game7_1";
+import Game7_2 from "../Game7/Game7_2";
+import Game7_3 from "../Game7/Game7_3";
+import Game7_4 from "../Game7/Game7_4";
+import Game7_5 from "../Game7/Game7_5";
+import Game7_6 from "../Game7/Game7_6";
+import Game8 from "../Game8/Game8";
+import Game8_1 from "../Game8/Game8_1";
 export default (DrawNav = StackNavigator({
     Home :{ screen: Home },
     Game1: {screen : Game1},
@@ -52,11 +61,19 @@ export default (DrawNav = StackNavigator({
     Game5_2: {screen : Game5_2},
     Game5_3: {screen : Game5_3},
     Game5_4: {screen : Game5_4},
-    Game5_4: {screen : Game5_4},
     Game6: {screen : Game6},
     Game6_1: {screen : Game6_1},
     Game6_2: {screen : Game6_2},
     Game6_3: {screen : Game6_3},
     Game6_4: {screen : Game6_4},
+    Game7: {screen : Game7},
+    Game7_1: {screen : Game7_1},
+    Game7_2: {screen : Game7_2},
+    Game7_3: {screen : Game7_3},
+    Game7_4: {screen : Game7_4},
+    Game7_5: {screen : Game7_5},
+    Game7_6: {screen : Game7_6},
+    Game8: {screen : Game8},
+    Game8_1: {screen : Game8_1},
 
 }));

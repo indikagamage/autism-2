@@ -28,11 +28,12 @@ const styles = StyleSheet.create({
         flex: 2
     },
     imagesLeft: {
-        width: 40,
-        height: 40,
+        width: 60,
+        height: 50,
         marginTop: 10,
         marginLeft: 20
     },
+
     imagesMain: {
         flex: 1,
         width: 200,
@@ -44,20 +45,33 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         paddingLeft:30,
-        paddingRight:30
+        paddingRight:30,
 
+    },
+    main1:{
+        flex: 2,
+        flexDirection: "row",
+        paddingLeft:30,
+        paddingRight:30,
+        marginTop:100
+
+    },
+    hand21:{
+        width:50,
+        height:50,
+        resizeMode:'contain'
     },
     mainItem: {
         flex: 5,
         width: '100%',
         height: 100,
-        borderColor: '#E24816',
-        borderWidth: 3,
+        // borderColor: '#E24816',
+        // borderWidth: 3,
         margin: 10,
         position:'relative',
         borderRadius: 10,
         justifyContent: 'center',
-        alignSelf: 'stretch',
+        alignItems: 'center',
         // paddingBottom:20
     },
     mainText: {
@@ -66,7 +80,7 @@ const styles = StyleSheet.create({
     },
     mainImgView: {
         position:'absolute',
-        paddingBottom:'35%'
+        paddingBottom:'5%',
     },
 
     mainIma: {
@@ -74,17 +88,7 @@ const styles = StyleSheet.create({
         height:95,
         resizeMode: 'contain',
     },
-    mainNameGame: {
-        backgroundColor:'#E24816',
-        color:'white',
-        textAlign:'center',
-        fontSize:13
-    },
-    mainTextView: {
-        bottom:0,
-        width:'100%',
-        position:'absolute',
-    },
+
     mainImaHand: {
         width:65,
         height:55,
@@ -101,54 +105,5 @@ const styles = StyleSheet.create({
         position:'relative',
         right:'15%'
     },
-    mainIma2_2nd: {
-        width:65,
-        height:65,
-        resizeMode: 'contain',
-        position:'absolute',
-        left:'30%',
-        top:'0%',
-        // transform: [{ rotate: '325deg'}]
-    },
-    mainIma2nd: {
-        width:65,
-        height:65,
-        resizeMode: 'contain',
-        position:'relative',
-        right:'15%',top:'5%',
-    },
-    mainIma4_2nd: {
-        width:45,
-        height:45,
-        resizeMode: 'contain',
-        position:'absolute',
-        left:'70%',
-        top:'0%',
-        // transform: [{ rotate: '325deg'}]
-    },
-    mainIma4nd: {
-        width:45,
-        height:45,
-        resizeMode: 'contain',
-        position:'relative',
-        right:'15%',top:'5%',left:'5%',
-    },
-    mainIma7_2nd: {
-        width:45,
-        height:45,
-        resizeMode: 'contain',
-        position:'absolute',
-        left:'70%',
-        top:'0%',
-        // transform: [{ rotate: '325deg'}]
-    },
-    mainIma7nd: {
-        width:55,
-        height:55,
-        resizeMode: 'contain',
-        position:'relative',
-        right:'15%',top:'5%',left:'5%',
-    },
-    aadimagesmages: {},
 });
 export default styles;
