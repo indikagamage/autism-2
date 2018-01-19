@@ -149,6 +149,30 @@ const styles = StyleSheet.create({
         position:'relative',
         right:'15%',top:'5%',left:'5%',
     },
-    aadimagesmages: {},
+    mainIma10_2nd: {
+        width:65,
+        height:65,
+        resizeMode: 'contain',
+        position:'absolute',
+        left:'50%',
+        top:'10%',
+        // transform: [{ rotate: '325deg'}]
+    },
+    mainIma10nd: {
+        width:65,
+        height:65,
+        resizeMode: 'contain',
+        position:'relative',
+        left:'-20%',
+        top:'10%',
+    },
+    mainIma10nd_1: {
+        width:35,
+        height:35,
+        resizeMode: 'contain',
+        position:'absolute',
+        // left:'-20%',
+        top:'50%',
+    },
 });
 export default styles;
