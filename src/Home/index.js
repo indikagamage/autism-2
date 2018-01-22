@@ -40,6 +40,10 @@ import Game8_1 from "../Game8/Game8_1";
 import Game9 from "../Game9/Game9";
 import Game9_1 from "../Game9/Game9_1";
 import Game10 from "../Game10/Game10";
+import Game10_1 from "../Game10/Game10_1";
+import Game10_2 from "../Game10/Game10_2";
+import Game10_3 from "../Game10/Game10_3";
+import Game10_4 from "../Game10/Game10_4";
 export default (DrawNav = StackNavigator({
     Home :{ screen: Home },
     Game1: {screen : Game1},
@@ -81,4 +85,8 @@ export default (DrawNav = StackNavigator({
     Game9: {screen : Game9},
     Game9_1: {screen : Game9_1},
     Game10: {screen : Game10},
+    Game10_1: {screen : Game10_1},
+    Game10_2: {screen : Game10_2},
+    Game10_3: {screen : Game10_3},
+    Game10_4: {screen : Game10_4},
 }));

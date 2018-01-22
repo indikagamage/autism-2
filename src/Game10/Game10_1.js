@@ -18,7 +18,7 @@ import {Image, View, TouchableOpacity, Animated} from 'react-native';
 import styles from './style';
 
 // var song = null;
-export default class Game10 extends React.Component {
+export default class Game10_1 extends React.Component {
     constructor(props) {
         super(props);
         this.goBack = this.goBack.bind(this);
@@ -67,8 +67,9 @@ export default class Game10 extends React.Component {
     }
     hideIma3() {
         this.setState({
-            status3: 1
+            status3: 2
         });
+        this.props.navigation.navigate("Game10_2")
 
     }
     getMyStyle3() {
@@ -82,13 +83,13 @@ export default class Game10 extends React.Component {
     }
     hideIma4(){
         this.setState({
-            status4:2
+            status4:1
         });
-        this.props.navigation.navigate("Game10_1")
 
     }
     getMyStyle4() {
         if (this.state.status4 ==1 ) {
+
             return {
                 width: 75,
                 height: 95,
@@ -113,14 +114,14 @@ export default class Game10 extends React.Component {
     }
     getMyStyle7() {
 
-            return {
-                width: 45,
-                height: 45,
-                top:'40%',
-                resizeMode: 'contain',
-                position:'absolute',
-                left:'15%'
-            }
+        return {
+            width: 45,
+            height: 45,
+            top:'40%',
+            resizeMode: 'contain',
+            position:'absolute',
+            left:'15%'
+        }
     }
     goBack(){
         this.props.navigation.navigate("Home")
@@ -160,6 +161,7 @@ export default class Game10 extends React.Component {
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
                                 <Image style={this.getMyStyle3()} source={require('../img/10/coc.png')}></Image>
+                                <Image style={this.getMyStyle7()} source={require('../img/10/thia.png')}></Image>
 
                             </View>
                         </TouchableOpacity>
@@ -168,7 +170,6 @@ export default class Game10 extends React.Component {
                             style={styles.mainItem}>
                             <View style={styles.mainImgView}>
                                 <Image style={this.getMyStyle4()} source={require('../img/10/coc.png')}></Image>
-                                <Image style={this.getMyStyle7()} source={require('../img/10/bi_do.png')}></Image>
                             </View>
                         </TouchableOpacity>
                         <TouchableOpacity
