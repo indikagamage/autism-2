@@ -51,7 +51,7 @@ export default class Home extends React.Component {
                             {/*<Image style={styles.imagesMain} source={require('../img/name.png')}></Image>*/}
                         {/*</View>*/}
                     </View>
-
+                    {/*1   */}
                     <View style={styles.main}>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("Game1")} style={styles.mainItem}>
                             <View style={styles.mainImgView} >
@@ -103,7 +103,7 @@ export default class Home extends React.Component {
                         </TouchableOpacity>
                     </View>
 
-
+{/*2*/}
                     <View style={styles.main}>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("Game6")} style={styles.mainItem}>
                             <View style={styles.mainImgView} >
@@ -156,14 +156,15 @@ export default class Home extends React.Component {
                             </View>
                         </TouchableOpacity>
                     </View>
+                    {/*3*/}
                     <View style={styles.main}>
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate("Game6")} style={styles.mainItem}>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate("Game11")} style={styles.mainItem}>
                             <View style={styles.mainImgView} >
-                                <Image style={styles.mainIma4nd} source={require('../img/6/ghe.png')}></Image>
-                                <Image style={styles.mainIma4_2nd} source={require('../img/6/maysaytoc_background.png')}></Image>
+                                <Image style={styles.mainIma4nd} source={require('../img/11/ga.png')}></Image>
+                                <Image style={styles.mainIma4_2nd} source={require('../img/11/tao.png')}></Image>
                             </View>
                             <View style={styles.mainTextView}>
-                                <Text style={styles.mainNameGame}>Phân nhóm</Text>
+                                <Text style={styles.mainNameGame}>Phủ định</Text>
                             </View>
                         </TouchableOpacity>
 
