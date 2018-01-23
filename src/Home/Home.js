@@ -47,9 +47,9 @@ export default class Home extends React.Component {
                             </TouchableOpacity>
 
                         </View>
-                        <View style={styles.headerMain}>
-                            <Image style={styles.imagesMain} source={require('../img/name.png')}></Image>
-                        </View>
+                        {/*<View style={styles.headerMain}>*/}
+                            {/*<Image style={styles.imagesMain} source={require('../img/name.png')}></Image>*/}
+                        {/*</View>*/}
                     </View>
 
                     <View style={styles.main}>
@@ -104,6 +104,58 @@ export default class Home extends React.Component {
                     </View>
 
 
+                    <View style={styles.main}>
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate("Game6")} style={styles.mainItem}>
+                            <View style={styles.mainImgView} >
+                                <Image style={styles.mainIma4nd} source={require('../img/6/ghe.png')}></Image>
+                                <Image style={styles.mainIma4_2nd} source={require('../img/6/maysaytoc_background.png')}></Image>
+                            </View>
+                            <View style={styles.mainTextView}>
+                                <Text style={styles.mainNameGame}>Phân nhóm</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate("Game7")} style={styles.mainItem}>
+                            <View style={styles.mainImgView} >
+                                <Image style={styles.mainIma7nd} source={require('../img/7/balo.png')}></Image>
+                                <Image style={styles.mainIma7_2nd} source={require('../img/7/balo.png')}></Image>
+                            </View>
+                            <View style={styles.mainTextView}>
+                                <Text style={styles.mainNameGame}>To nhỏ</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate("Game8")} style={styles.mainItem}>
+                            <View style={styles.mainImgView} >
+                                <Image style={styles.mainIma4nd} source={require('../img/8/hinhvuong.png')}></Image>
+                                <Image style={styles.mainIma4_2nd} source={require('../img/8/hinhtron.png')}></Image>
+                            </View>
+                            <View style={styles.mainTextView}>
+                                <Text style={styles.mainNameGame}>Vuông tròn</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate("Game9")} style={styles.mainItem}>
+                            <View style={styles.mainImgView} >
+                                <Image style={styles.mainIma4nd} source={require('../img/9/tui1keo.png')}></Image>
+                                <Image style={styles.mainIma4_2nd} source={require('../img/9/tui15keo.png')}></Image>
+                            </View>
+                            <View style={styles.mainTextView}>
+                                <Text style={styles.mainNameGame}>Một, Nhiều</Text>
+                            </View>
+                        </TouchableOpacity>
+
+                        <TouchableOpacity onPress={() =>  this.props.navigation.navigate("Game10")} style={styles.mainItem}>
+                            <View style={styles.mainImgView} >
+                                <Image style={styles.mainIma10nd} source={require('../img/10/coc.png')}></Image>
+                                <Image style={styles.mainIma10nd_1} source={require('../img/10/bi_do.png')}></Image>
+                                <Image style={styles.mainIma10_2nd} source={require('../img/10/coc.png')}></Image>
+                            </View>
+                            <View style={styles.mainTextView}>
+                                <Text style={styles.mainNameGame}>Có, Không</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
                     <View style={styles.main}>
                         <TouchableOpacity onPress={() => this.props.navigation.navigate("Game6")} style={styles.mainItem}>
                             <View style={styles.mainImgView} >

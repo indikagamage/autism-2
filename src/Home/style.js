@@ -23,10 +23,10 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
     },
-
-    headerMain: {
-        flex: 2
-    },
+    //
+    // headerMain: {
+    //     flex: 2
+    // },
     imagesLeft: {
         width: 40,
         height: 40,
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     mainItem: {
         flex: 5,
         width: '100%',
-        height: 100,
+        height: 70,
         borderColor: '#E24816',
         borderWidth: 3,
         margin: 10,
@@ -86,52 +86,57 @@ const styles = StyleSheet.create({
         position:'absolute',
     },
     mainImaHand: {
-        width:65,
-        height:55,
+        width:45,
+        height:45,
         resizeMode: 'contain',
         position:'absolute',
-        left:'30%',
+        left:'50%',
         top:'30%',
         transform: [{ rotate: '325deg'}]
     },
     mainIma1st: {
-        width:105,
-        height:95,
+        width:65,
+        height:55,
         resizeMode: 'contain',
         position:'relative',
-        right:'15%'
+        right:'5%',
+        top:'10%'
     },
     mainIma2_2nd: {
-        width:65,
-        height:65,
+        width:55,
+        height:55,
         resizeMode: 'contain',
         position:'absolute',
-        left:'30%',
-        top:'0%',
+        left:'50%',
+        top:'10%',
+        right:'15%'
         // transform: [{ rotate: '325deg'}]
     },
     mainIma2nd: {
-        width:65,
-        height:65,
+        width:55,
+        height:55,
         resizeMode: 'contain',
         position:'relative',
-        right:'15%',top:'5%',
+        left:'15%',
+        top:'15%',
     },
     mainIma4_2nd: {
-        width:45,
-        height:45,
+        width:35,
+        height:35,
         resizeMode: 'contain',
         position:'absolute',
-        left:'70%',
+        left:'100%',
         top:'0%',
         // transform: [{ rotate: '325deg'}]
     },
     mainIma4nd: {
-        width:45,
-        height:45,
+        width:35,
+        height:35,
         resizeMode: 'contain',
         position:'relative',
-        right:'15%',top:'5%',left:'5%',
+        // right:'25%',
+        top:'5%',
+        left:'35%',
     },
     mainIma7_2nd: {
         width:45,
@@ -143,36 +148,38 @@ const styles = StyleSheet.create({
         // transform: [{ rotate: '325deg'}]
     },
     mainIma7nd: {
-        width:55,
-        height:55,
+        width:45,
+        height:45,
         resizeMode: 'contain',
         position:'relative',
-        right:'15%',top:'5%',left:'5%',
+        right:'15%',
+        top:'5%',
+        left:'5%',
     },
     mainIma10_2nd: {
-        width:65,
-        height:65,
+        width:45,
+        height:45,
         resizeMode: 'contain',
         position:'absolute',
-        left:'50%',
+        left:'80%',
         top:'10%',
         // transform: [{ rotate: '325deg'}]
     },
     mainIma10nd: {
-        width:65,
-        height:65,
+        width:45,
+        height:45,
         resizeMode: 'contain',
         position:'relative',
-        left:'-20%',
+        left:'10%',
         top:'10%',
     },
     mainIma10nd_1: {
-        width:35,
-        height:35,
+        width:25,
+        height:25,
         resizeMode: 'contain',
         position:'absolute',
-        // left:'-20%',
-        top:'50%',
+        left:'30%',
+        top:'45%',
     },
 });
 export default styles;
